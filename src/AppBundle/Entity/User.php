@@ -41,6 +41,14 @@ class User extends BaseUser
         return $this;
     }
 
+    public function __construct($visibility=null)
+    {
+        parent::__construct();
+        // your own logic
+        $this->profileVisibility=$visibility;
+    }
+
+
     /**
      * Get profileVisibility
      *
@@ -49,13 +57,5 @@ class User extends BaseUser
     public function getProfileVisibility()
     {
         return $this->profileVisibility;
-    }
-
-
-    public function __construct($visibility=null)
-    {
-        parent::__construct();
-        // your own logic
-        $this->profileVisibility=$visibility;
     }
 }
