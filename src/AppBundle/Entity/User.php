@@ -32,7 +32,7 @@ class User extends BaseUser
      *
      * @param boolean $profileVisibility
      *
-     * @return Compte
+     * @return User
      */
     public function setProfileVisibility($profileVisibility)
     {
@@ -52,9 +52,10 @@ class User extends BaseUser
     }
 
 
-    public function __construct()
+    public function __construct($visibility=null)
     {
         parent::__construct();
         // your own logic
+        $this->profileVisibility=$visibility;
     }
 }
