@@ -22,10 +22,21 @@ class idea
     private $id;
 
     /**
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\User")
+     */
+    private $IdUser;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\categorie")
+     */
+    private $categorie;
+
+    /**
      * @var string
      *
      * @ORM\Column(name="title", type="string", length=200)
      */
+
     private $title;
 
     /**

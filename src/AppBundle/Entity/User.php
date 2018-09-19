@@ -19,6 +19,39 @@ class User extends BaseUser
      */
     protected $id;
 
+    /**
+     * @var bool
+     *
+     * @ORM\Column(name="profileVisibility", type="boolean")
+     */
+    private $profileVisibility;
+
+
+    /**
+     * Set profileVisibility
+     *
+     * @param boolean $profileVisibility
+     *
+     * @return Compte
+     */
+    public function setProfileVisibility($profileVisibility)
+    {
+        $this->profileVisibility = $profileVisibility;
+
+        return $this;
+    }
+
+    /**
+     * Get profileVisibility
+     *
+     * @return bool
+     */
+    public function getProfileVisibility()
+    {
+        return $this->profileVisibility;
+    }
+
+
     public function __construct()
     {
         parent::__construct();

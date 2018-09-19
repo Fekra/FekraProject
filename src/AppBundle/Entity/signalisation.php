@@ -22,6 +22,21 @@ class signalisation
     private $id;
 
     /**
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\User")
+     */
+    private $user;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\User")
+     */
+    private $compteSignale;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\idea")
+     */
+    private $ideaSignale;
+
+    /**
      * @var \DateTime
      *
      * @ORM\Column(name="signalDate", type="datetime")

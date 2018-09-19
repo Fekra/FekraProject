@@ -20,12 +20,17 @@ class notification
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     private $id;
+    /**
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\User")
+     */
+    private $User;
 
     /**
      * @var string
      *
      * @ORM\Column(name="content", type="string", length=300)
      */
+
     private $content;
 
 

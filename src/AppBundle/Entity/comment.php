@@ -22,6 +22,15 @@ class comment
     private $id;
 
     /**
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\User")
+     */
+    private $User;
+    /**
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\idea")
+     */
+    private $idea;
+
+    /**
      * @var string
      *
      * @ORM\Column(name="content", type="string", length=500)

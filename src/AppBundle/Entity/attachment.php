@@ -22,6 +22,10 @@ class attachment
     private $id;
 
     /**
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\message")
+     */
+    private $message;
+    /**
      * @var string
      *
      * @ORM\Column(name="path", type="string", length=200)
