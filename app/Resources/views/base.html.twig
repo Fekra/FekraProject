@@ -18,43 +18,47 @@
 <nav class="row navbar navbar-expand-lg navbar-light d-flex justify-content-center flex-nowrap fixed-top">
     <div class="col-10 d-flex flex-nowrap">
         <a class="navbar-brand p-0" href="#"><img src="img/logo.png" alt="idea_logo" width="100px"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+
         <div class="profile_pic">
 
             <img class="rounded-circle" src="{% block profilePic %}img/pic.jpg {% endblock %}" alt="idea_logo">
 
         </div>
-        <div class="collapse navbar-collapse d-flex justify-content-end" id="menu">
-            <ul class="navbar-nav mt-2 mt-lg-0 px-5">
-                <li class="nav-item active ">
-                    <a class="nav-link text-capitalize" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-capitalize text-white" href="#">my ideas</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-capitalize text-white" href="#">followers</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-capitalize text-white" href="#">fallowing</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fas fa-caret-down"></i></a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <!--                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">-->
-                <button class="btn bg-transparent my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
-            </form>
+        <div class="header-menu">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav mt-2 mt-lg-0 px-5">
+                    <li class="nav-item active ">
+                        <a class="nav-link text-capitalize" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-capitalize text-white" href="#">my ideas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-capitalize text-white" href="#">followers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-capitalize text-white" href="#">fallowing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-caret-down"></i></a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <!--                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">-->
+                    <button class="btn bg-transparent my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
         </div>
     </div>
 </nav>
 <div class=" d-flex justify-content-center flex-nowrap">
     <div class="row col-10 m-0 main">
         <div class="col-2 side_bar-left mx-3 px-0">
-            <div class="left_card" style="max-width: 12rem;">
+            <div class="left_card">
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item text-capitalize"><a href=""> news feed</a></li>
                     <li class="list-group-item text-capitalize"><a href=""> messages</a></li>
@@ -62,9 +66,9 @@
                 </ul>
             </div>
         </div>
-        <div class="col-5 news_feed_bar mx-3 px-0" style="margin: 0 auto">
+        <div class="col-5 news_feed_bar mx-3 px-0" >
             {% block post %}
-
+            {# ici on va lister les posts (les idées) #}
           {% endblock %}
             <div class="d-flex justify-content-center m-5">
                 <button class="btn btn-outline-primary load_more text-uppercase">load more</button>
@@ -72,89 +76,19 @@
 
         </div>
         <div class="col-3 side_bar-right mx-3 px-0">
-            <div class="right_card" style="max-width: 18rem;">
+            <div class="right_card">
                 <div class="card-header">
                     Featured Post
                 </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item text-capitalize d-flex p-2">
-                        <div class="side_img mr-2">
-                            <a href="#" class="side_img"><img class="rounded-circle" src="img/pic.jpg" alt="idea_logo"></a>
-                        </div>
-                        <div>
-                            <p class="small mb-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            <p class="small mb-0">2 days ago</p>
-                        </div>
-                    </li>
-                    <li class="list-group-item text-capitalize d-flex p-2">
-                        <div class="side_img mr-2">
-                            <a href="#" class="side_img"><img class="rounded-circle" src="img/pic.jpg" alt="idea_logo"></a>
-                        </div>
-                        <div>
-                            <p class="small mb-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            <p class="small mb-0">2 days ago</p>
-                        </div>
-                    </li>
-                    <li class="list-group-item text-capitalize d-flex p-2">
-                        <div class="side_img mr-2">
-                            <a href="#" class="side_img"><img class="rounded-circle" src="img/pic.jpg" alt="idea_logo"></a>
-                        </div>
-                        <div>
-                            <p class="small mb-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            <p class="small mb-0">2 days ago</p>
-                        </div>
-                    </li>
-                    <li class="list-group-item text-capitalize d-flex p-2">
-                        <div class="side_img mr-2">
-                            <a href="#" class="side_img"><img class="rounded-circle" src="img/pic.jpg" alt="idea_logo"></a>
-                        </div>
-                        <div>
-                            <p class="small mb-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            <p class="small mb-0">2 days ago</p>
-                        </div>
-                    </li>
-                </ul>
+                {% block featured %}
+                {#ici on va mettre les meilleures idées de tous le monde#}
+                {% endblock %}
                 <div class="card-header">
                     Recent Post
                 </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item text-capitalize d-flex p-2">
-                        <div class="side_img mr-2">
-                            <a href="#" class="side_img"><img class="rounded-circle" src="img/pic1.jpeg" alt="idea_logo"></a>
-                        </div>
-                        <div>
-                            <p class="small mb-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            <p class="small mb-0">2 days ago</p>
-                        </div>
-                    </li>
-                    <li class="list-group-item text-capitalize d-flex p-2">
-                        <div class="side_img mr-2">
-                            <a href="#" class="side_img"><img class="rounded-circle" src="img/pic1.jpeg" alt="idea_logo"></a>
-                        </div>
-                        <div>
-                            <p class="small mb-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            <p class="small mb-0">2 days ago</p>
-                        </div>
-                    </li>
-                    <li class="list-group-item text-capitalize d-flex p-2">
-                        <div class="side_img mr-2">
-                            <a href="#" class="side_img"><img class="rounded-circle" src="img/pic1.jpeg" alt="idea_logo"></a>
-                        </div>
-                        <div>
-                            <p class="small mb-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            <p class="small mb-0">2 days ago</p>
-                        </div>
-                    </li>
-                    <li class="list-group-item text-capitalize d-flex p-2">
-                        <div class="side_img mr-2">
-                            <a href="#" class="side_img"><img class="rounded-circle" src="img/pic1.jpeg" alt="idea_logo"></a>
-                        </div>
-                        <div>
-                            <p class="small mb-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            <p class="small mb-0">2 days ago</p>
-                        </div>
-                    </li>
-                </ul>
+                {% block recent %}
+                {#ici on va lister les idées les plus recentes des amis #}
+                {% endblock %}
             </div>
         </div>
     </div>

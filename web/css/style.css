@@ -16,6 +16,12 @@ body {
     height: 100px;
     width: 100px;
 }
+.fa-heart{
+    color: red;
+}
+.fa-comment-alt{
+    color: lightgrey;
+}
 .main {
     margin-top: 105px !important;
 }
@@ -24,12 +30,26 @@ body {
     box-shadow: 0 0 4px 2px #e0e0e0;
     color: #757575 !important;
 }
+.right_card{
+    max-width: 18rem;
+}
+
+.news_feed_bar{
+    margin: 0 auto;
+}
+.left_card{
+    max-width: 12rem;
+}
 .left_card a{
     color: #757575 !important;
 }
 .left_card li:active{
     color: #242424 !important;
     background-color: #00d4fb;
+}
+.header-menu{
+    position: absolute;
+    right: 2%;
 }
 .center_card {
     background-color: white !important;
