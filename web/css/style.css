@@ -1,0 +1,58 @@
+* {
+    box-sizing: content-box;
+}
+body {
+    background-color: #f4eaf5;
+}
+.navbar {
+    background-color: #00bde3;
+    color: #000;
+}
+.profile_pic > .rounded-circle {
+    margin-top: -7px;
+    position: absolute;
+    object-fit: cover;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+.main {
+    margin-top: 105px !important;
+}
+.left_card, .center_card, .right_card{
+    border-radius: 5px !important;
+    box-shadow: 0 0 4px 2px #e0e0e0;
+    color: #757575 !important;
+}
+.left_card a{
+    color: #757575 !important;
+}
+.left_card li:active{
+    color: #242424 !important;
+    background-color: #00d4fb;
+}
+.center_card {
+    background-color: white !important;
+}
+.center_card > .card-img-top {
+    max-width: 29rem;
+    border-radius: 3px !important;
+    border: 4px solid white;
+    box-shadow: 0 0 4px 2px #e0e0e0;
+    object-fit: cover;
+}
+.card_img > .rounded-circle {
+    object-fit: cover;
+    border-radius: 50% !important;
+    height: 30px;
+    width: 30px;
+}
+.side_img > .rounded-circle {
+    object-fit: cover;
+    border-radius: 50% !important;
+    height: 4rem;
+    width: 4rem;
+}
+.load_more {
+    border-radius: 35%;
+}

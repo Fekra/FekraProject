@@ -41,7 +41,7 @@ class User extends BaseUser
         return $this;
     }
 
-    public function __construct($visibility=null)
+    public function __construct($visibility=true)
     {
         parent::__construct();
         // your own logic
