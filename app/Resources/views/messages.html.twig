@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">-->
+    <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>-->
+    <title>messages</title>
+    <!--<link rel="stylesheet" href="css/style.css">-->
+    <link rel="stylesheet" href="{{ asset('css/message.css')}}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+
+</head>
+<body>
+<nav class="row navbar navbar-expand-lg navbar-light d-flex justify-content-center flex-nowrap fixed-top">
+    <div class="col-10 d-flex flex-nowrap">
+        <a class="navbar-brand p-0" href="#"><img src="img/logo.png" alt="idea_logo" width="100px"></a>
+
+        <div class="profile_pic">
+            <img class="rounded-circle" src="img/pic.jpg" alt="idea_logo">
+        </div>
+        <div class="header-menu">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav mt-2 mt-lg-0 px-5">
+                    <li class="nav-item active ">
+                        <a class="nav-link text-capitalize" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-capitalize text-white" href="#">my ideas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-capitalize text-white" href="#">followers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-capitalize text-white" href="#">fallowing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-caret-down"></i></a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <!--                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">-->
+                    <button class="btn bg-transparent my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="row main  mx-0 d-flex justify-content-center">
+    <div class="col-10 content d-flex flex-nowrap p-0">
+        <div class="col-4 left_side">
+            <div class="container p-0">
+                <div class="mt-2 d-flex justify-content-center">
+                    <h5 class="text-uppercase">Conversation</h5>
+                </div>
+                <hr class="mt-2">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="input-group">
+                            <input class="form-control border-secondary search" type="search" placeholder="search">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item text-capitalize d-flex p-2 my-2 bg-transparent message_bg">
+                    <div class="side_img mx-2">
+                        <a href="#" class="side_img"><img class="rounded-circle" src="img/pic1.jpeg" alt="idea_logo"></a>
+                    </div>
+                    <div class="mr-3">
+                        <p class="small mb-1">Lorem ipsum</p>
+                        <p class="small mb-1">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="ml-4">
+                        <i class="fas fa-ellipsis-h  d-flex justify-content-end"></i>
+                        <p class="small mb-0">2 days ago</p>
+                    </div>
+                </li>
+                <li class="list-group-item text-capitalize d-flex p-2 my-2 bg-transparent message_bg">
+                    <div class="side_img mx-2">
+                        <a href="#" class="side_img"><img class="rounded-circle" src="img/pic1.jpeg" alt="idea_logo"></a>
+                    </div>
+                    <div class="mr-3">
+                        <p class="small mb-1">Lorem ipsum</p>
+                        <p class="small mb-1">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="ml-4">
+                        <i class="fas fa-ellipsis-h  d-flex justify-content-end"></i>
+                        <p class="small mb-0">2 days ago</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="col-5 center_side">
+            <div class="m-2 d-flex flex-row align-items-baseline">
+                <h5 class="text-capitalize">Lorem ipsum</h5><i class="fas fa-dot-circle mx-4" style="color: #78ff3f"></i>
+            </div>
+            <hr class="mt-2">
+            <div class="d-flex flex-column">
+                <div>
+                    <div>
+                        <p class="small">7:40 PM</p>
+                        <input class="form-control receive" type="text" style="width: auto">
+                    </div>
+                    <div class="d-flex justify-content-end m-0">
+                        <p class="small">7:40 PM</p>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <input class="form-control sent " type="text">
+                    </div>
+                </div>
+                <div class="input_msg d-flex align-items-end mt-3">
+                    <input class="form-control " type="text">
+                </div>
+            </div>
+
+        </div>
+        <div class="col-3 right_side"></div>
+    </div>
+</div>
+</body>
+</html>

@@ -228,5 +228,52 @@ class idea
     {
         return $this->attachmentPath;
     }
-}
 
+    /**
+     * Set idUser
+     *
+     * @param \AppBundle\Entity\User $idUser
+     *
+     * @return idea
+     */
+    public function setIdUser(\AppBundle\Entity\User $idUser = null)
+    {
+        $this->IdUser = $idUser;
+
+        return $this;
+    }
+
+    /**
+     * Get idUser
+     *
+     * @return \AppBundle\Entity\User
+     */
+    public function getIdUser()
+    {
+        return $this->IdUser;
+    }
+
+    /**
+     * Set categorie
+     *
+     * @param \AppBundle\Entity\categorie $categorie
+     *
+     * @return idea
+     */
+    public function setCategorie(\AppBundle\Entity\categorie $categorie = null)
+    {
+        $this->categorie = $categorie;
+
+        return $this;
+    }
+
+    /**
+     * Get categorie
+     *
+     * @return \AppBundle\Entity\categorie
+     */
+    public function getCategorie()
+    {
+        return $this->categorie;
+    }
+}

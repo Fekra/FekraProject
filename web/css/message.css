@@ -1,0 +1,75 @@
+* {
+    box-sizing: content-box;
+}
+body {
+    background-color: #f6f6fd !important;
+}
+.navbar {
+    background-color: #ef1a76;
+    color: #000;
+}
+.profile_pic > .rounded-circle {
+    margin-top: -7px;
+    position: absolute;
+    object-fit: cover;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+.header-menu{
+    position: absolute;
+    right: 2%;
+}
+.main {
+    margin-top: 7rem;
+
+}
+.content {
+    height: 80vh;
+    border-radius: 5px !important;
+    box-shadow: 0 0 4px 2px #e0e0e0;
+}
+.left_side {
+    background-color: #ebebeb;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+
+}
+.center_card {
+    background-color: #ffffff;
+
+}
+.right_side {
+    background-color: #ebebeb;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+.side_img > .rounded-circle {
+    object-fit: cover;
+    border-radius: 50% !important;
+    height: 3rem;
+    width: 3rem;
+}
+
+.search {
+    background-color: transparent !important;
+    width: 100%;
+}
+.message_bg {
+    border:none !important;
+}
+.message_bg:active {
+    border-radius: 5px !important;
+    background-color: lightgray !important;
+}
+.sent {
+    background-color: #00d4fb !important;
+    width: auto !important;
+}
+.receive {
+    background-color: #cbffc8 !important;
+    width: auto !important;
+}
+.input_msg {
+    bottom: 0 !important;
+}
