@@ -76,3 +76,17 @@ body {
 .load_more {
     border-radius: 35%;
 }
+.btnAddIdea{
+    height: 4rem;
+    width: 3rem;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 50;
+    font-size: 3rem;
+    font-weight: bold;
+    border: 0px;
+    bottom: 10%;
+    right: 1%;
+    text-align: center;
+
+}

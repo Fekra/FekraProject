@@ -33,7 +33,20 @@ class notification
 
     private $content;
 
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="notifDate", type="datetime", length=300)
+     */
 
+    private $notifDate;
+
+    /**
+     * @var bool
+     *
+     * @ORM\Column(name="status", type="boolean")
+     */
+    private $status;
     /**
      * Get id
      *
@@ -67,5 +80,76 @@ class notification
     {
         return $this->content;
     }
-}
 
+    /**
+     * Set notifDate
+     *
+     * @param \DateTime $notifDate
+     *
+     * @return notification
+     */
+    public function setNotifDate($notifDate)
+    {
+        $this->notifDate = $notifDate;
+
+        return $this;
+    }
+
+    /**
+     * Get notifDate
+     *
+     * @return \DateTime
+     */
+    public function getNotifDate()
+    {
+        return $this->notifDate;
+    }
+
+    /**
+     * Set status
+     *
+     * @param boolean $status
+     *
+     * @return notification
+     */
+    public function setStatus($status)
+    {
+        $this->status = $status;
+
+        return $this;
+    }
+
+    /**
+     * Get status
+     *
+     * @return boolean
+     */
+    public function getStatus()
+    {
+        return $this->status;
+    }
+
+    /**
+     * Set user
+     *
+     * @param \AppBundle\Entity\User $user
+     *
+     * @return notification
+     */
+    public function setUser(\AppBundle\Entity\User $user = null)
+    {
+        $this->User = $user;
+
+        return $this;
+    }
+
+    /**
+     * Get user
+     *
+     * @return \AppBundle\Entity\User
+     */
+    public function getUser()
+    {
+        return $this->User;
+    }
+}

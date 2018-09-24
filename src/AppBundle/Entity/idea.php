@@ -3,7 +3,7 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-
+use Symfony\Component\Validator\Constraints as Assert;
 /**
  * idea
  *
@@ -33,7 +33,7 @@ class idea
 
     /**
      * @var string
-     *
+     * @Assert\NotBlank(message="Champ obligatoire")
      * @ORM\Column(name="title", type="string", length=200)
      */
 
